@@ -1,0 +1,312 @@
+*, *::before, *::after {
+
+    box-sizing: border-box;
+
+}
+
+* {
+
+    margin: 0;
+
+}
+
+h1 {
+
+    font-size: 36px;
+
+}
+
+img {
+
+    display:block;
+    max-width: 100%;
+
+}
+
+.body {
+
+    background-color: #040715;
+
+}
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 790px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    background-color: #040715;
+
+}
+
+nav {
+
+    width: 100%;
+    border-bottom: solid 3px white;
+
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20px;
+    padding-block: 10px;
+    gap: 10px;
+
+    align-items: center;
+
+
+}
+
+button {
+
+    border-radius: 100vh;
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+    background-color: #7209B7;
+    border: solid 2px white;
+
+}
+
+nav h1 {
+
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.title-icon {
+
+    font-size: 1.5rem;
+
+}
+
+.new-post-btn {
+
+    margin-left: auto;
+
+}
+
+.filter-btns {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: auto;
+    padding-block: 10px;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+.filter-btn {
+
+    padding-inline: 7px;
+    padding-block: 5px;
+    font-size: 12px;
+    background-color: #7209B7;
+    border: solid 0 px black;
+
+}
+
+.active-filter {
+
+    background-color: white;
+    color: black;
+    border-color: black;
+
+}
+
+.add-post-div {
+
+    top: 6%;
+
+    background-color: white;
+
+    display: none;
+    position: fixed;
+
+    margin-inline: auto;
+    margin-block: auto;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 90%;
+    height: 80%;
+    z-index: 9999;
+    max-height: 490px;
+
+    padding: 20px;
+    border: solid 3px black;
+    border-radius: 15px;
+
+    text-align: center;
+
+}
+
+#image-input {
+
+    display: none;
+
+}
+
+#img-input-label {
+
+    display: inline-block;
+    margin-inline: auto;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    text-align: center;
+    padding-block: 30px;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+
+}
+
+.posts {
+
+    width: 90%;
+    height: 85%;
+    max-height: 450px;
+    flex-grow: 1;
+    text-wrap: wrap;
+    gap: 100px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    border: solid 5px white;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.post-preview {
+
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-block: 10px;
+    border-radius: 10px;
+
+    background-color: #C1121F;
+    box-shadow: rgba(255, 100, 111, 0.5) 0px 7px 29px 0px;
+    color: white;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+
+}
+
+.post-preview img {
+
+    width: 100%;
+    height: 100%;
+    max-width: 75px;
+    max-height: 75px;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+.post-title-preview {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    max-width: 100%;
+
+}
+
+.post-title-preview h3 {
+
+    font-size: 17;
+
+}
+
+.post-author-preview {
+
+    font-size: 12px;
+
+}
+
+.post-title-preview p {
+
+    text-wrap: wrap;
+
+}
+
+.post-div {
+
+    display: none;
+    flex-direction: column;
+    position: fixed;
+
+    top: 3%;
+    z-index: 9999;
+    width: 90%;
+    height: 80%;
+
+    margin: auto;
+    background-color: white;
+    border: solid 5px black;
+    border-radius: 15px;
+
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 15px;
+
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+
+}
+
+.post-div img {
+
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 15px;
+
+}
+
+.post-div .bi {
+
+    margin-left: auto;
+    font-size: 2rem;
+
+}
+
+.add-post-div .bi {
+
+    font-size: 1.25rem;
+
+}
